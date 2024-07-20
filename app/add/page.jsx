@@ -22,7 +22,7 @@ async function sub(e){
   }
 
   try{
-    await axios.post("http://localhost:3000/api/topics",data);
+    await axios.post("api/topics",data);
     router.refresh();
     router.push('/');
   }

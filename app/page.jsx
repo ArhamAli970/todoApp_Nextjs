@@ -17,7 +17,7 @@ useEffect(()=>{
   
     try{
         
-        let d=await axios.get("http://localhost:3000/api/topics");
+        let d=await axios.get("api/topics");
         setTopic(d.data);
     }
     catch(e){

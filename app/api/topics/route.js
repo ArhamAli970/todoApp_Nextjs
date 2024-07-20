@@ -1,5 +1,9 @@
 import main from "@/libs/mongodb";
 import Topic from "@/schema/topic";
+// const cors = require('cors');
+
+
+// app.use(cors());
 // import { Gothic_A1 } from "next/font/google";
 import { NextResponse } from "next/server";
 

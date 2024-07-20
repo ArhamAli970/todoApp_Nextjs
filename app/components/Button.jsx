@@ -11,7 +11,7 @@ let router=useRouter();
       if(conf){
 
     try{
-      let data=await axios.delete(`http://localhost:3000/api/topics?id=${id}`)
+      let data=await axios.delete(`api/topics?id=${id}`)
       let ans=data.data;
 
       topic=topic.filter((e)=>{
