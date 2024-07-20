@@ -17,7 +17,7 @@ export default function EditForm({id}){
        async function fun(){ 
 
         try{
-       let d= await axios.get(`api/topics/${id}`)
+       let d= await axios.get(`/edit/${id}/api`)
 
        let {title,description}=d.data;
 
@@ -50,7 +50,7 @@ export default function EditForm({id}){
 
         try{
 
-            await axios.put(`api/topics/${id}`,data)
+            await axios.put(`/edit/${id}/api`,data)
             router.refresh();
             router.push("/");
              
